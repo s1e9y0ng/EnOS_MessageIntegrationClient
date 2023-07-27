@@ -1,0 +1,11 @@
+{
+    "mqtt_endpoint":"tcp://mqtt-ppe1.envisioniot.com",
+    "channelid":"%channel%&DYgXLCxS",
+    "clientid":"DYgXLCxS|securemode=4,signmethod=sha1,timestamp=1690184379124|",
+    "pw":"8FE7CDC26F2FF0D3B87B05B061E01D81310F9C0C",
+    "pub_topic":"/sys/DYgXLCxS/integration/measurepoint/post",
+    "sub_topic":"/sys/DYgXLCxS/integration/measurepoint/post_reply",
+    "devicekey":"HoWvdGPrTW",
+    "filename":"sampledatafile.csv",
+    "validatemode": false
+}
