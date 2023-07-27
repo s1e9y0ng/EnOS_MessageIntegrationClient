@@ -8,7 +8,7 @@ from datetime import datetime
 # Initializing global variables 
 mqtt_endpoint = ""
 channelid = ""
-clientid = ""
+username = ""
 pw = ""
 pub_topic = ""
 sub_topic = ""
@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
     mqtt_endpoint = config["mqtt_endpoint"]
     channelid = config["channelid"]
-    clientid = config["clientid"]
+    username = config["username"]
     pw = config["pw"]
     pub_topic = config["pub_topic"]
     sub_topic = config["sub_topic"]
@@ -161,7 +161,7 @@ if __name__ == '__main__':
     client = mqtt.Client()
     client.on_connect = on_connect
     client.on_message = on_message
-    client._client_id = clientid
+    client._client_id = username
     client.username_pw_set(channelid, password=pw)
     client.connect(mqtt_endpoint, 11883, 60)
     client.loop_start()
